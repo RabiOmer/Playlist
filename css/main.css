@@ -1,0 +1,255 @@
+body{
+  background-color: pink;
+}
+
+#main-box {
+    margin-top: 50px;
+    height: 1500px;
+    background-color: pink;
+  }
+
+  nav {
+    height: 25px;
+    border-bottom: 1px solid black;
+  }
+
+  #nav-r {
+    float: right;
+    top: 10px;
+    right: 10px;
+    position: relative;
+
+  }
+
+  #add-playlist {
+    position: relative;
+    float: left;
+    left: 10px;
+    top: 10px;
+  }
+
+  .player {
+    margin-top: 50px;
+    margin: 0 auto;
+    height: 200px;
+    width: 500px;
+    background-color: orangered;
+    border-radius: 104px;
+  }
+
+  #player {
+    display: none;
+    margin-top: 65px;
+
+  }
+
+  .imge-player img{
+    border-radius: 90px;
+    width: 180px;
+    height: 180px;
+    position: relative;
+    float: left;
+    left: 10px;
+    top: 10px;
+  }
+
+  #btn-imge {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: white;
+    margin: 71px;
+  }
+
+  #player-music {
+    width: 250px;
+    margin-top: -17px;
+    margin-left: 20px;
+}
+
+  #playlist {
+    margin-left: 180px;
+    height: 80px;
+    width: 262px;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  #nowplay {
+    margin-left: 193px;
+  }
+  .imge-player:hover #btn-imge{
+    display: block;
+  }
+  #btn-imge{
+    display: none;
+  }
+  #btn-imge span {
+    height: 25px;
+    width: 25px;
+    margin: 19px;
+  }
+
+  .btn-play {
+    display: none;
+  }
+
+  #playlist>li:hover {
+    font-weight: 800;
+  }
+
+  #playlist>li:hover .btn-play {
+    display: inline;
+  }
+
+  #playlist>li:hover .num {
+    display: none;
+  }
+
+  .box-play {
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+  }
+
+  .img-list {
+    margin-left: 24px;
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+  }
+  .img-list img{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+  }
+
+  .box-play:hover .btn-list{
+    display: inline-block;
+  }
+  .box-play:hover .more-btn{
+    display: inline-block;
+  }
+
+
+
+  .btn-list {
+    display: none;
+    width: 50px;
+    position: absolute;
+    float: left;
+    top: 125px;
+    left: 125px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: white;
+    z-index: 99999;
+  }
+
+  .btn-list span {
+    margin: 19px;
+  }
+
+  .list-play {
+    margin-top: 10px;
+  }
+
+  .form-left {
+    position: relative;
+    float: left;
+    width: 250px;
+  }
+
+  .form-left p {
+    margin-top: 5px;
+  }
+
+  .add-form-1 .form-left label {
+    width: 200px;
+  }
+
+  .show-imge {
+    width: 164px;
+    height: 132px;
+    float: right;
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .modal-body {
+    height: 170px;
+  }
+
+  .add-form-1 {
+    display: none;
+  }
+  .add-form-1 p{
+    width: 400px;
+  }
+  .add-form-2 p{
+    margin:3px;
+  }
+  .url-list-form{
+    height: 90px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .add-sont-url{
+    width: 255px;
+  }
+  .add-form-2{
+    display: none;
+  }
+  .error{
+    border: 2px solid red;
+  }
+  .add-url-form, #add-playlist > span{
+    cursor: pointer;
+  }
+  .spinning-circle {
+    animation: spinning-circle 10s linear infinite ;
+  }
+  
+  @-webkit-keyframes spinning-circle {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .more-btn{
+    display: none;
+    position: absolute;
+    top: 63px;
+    left: 112px;
+    z-index: 99999;
+  }
+  .more-btn span{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    line-height: 30px;
+    margin: 5px;
+  }
+  #more {
+    position: relative;
+    right: -340px;
+    top: 83px;
+  }
+  #more span{
+    margin-bottom: 8px;
+    display: block;
+  }

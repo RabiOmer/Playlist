@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>My Awesome Player</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <P id="add-playlist" data-toggle="modal" data-target="#playlistform">
+          <span class="glyphicon glyphicon-plus-sign"></span>Add New Playlist</P>
+      </div>
+      <div id="nav-r">
+        <input type="text" class="search-inp" placeholder="Search">
+        <span class="glyphicon glyphicon-search"></span>
+      </div>
+      <div id="player">
+        <div class="player">
+          <div class="imge-player">
+
+          </div>
+          <div id="playerBox">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="main-box" class="container-fluid">
+    <div class="row list-play">
+      <div id="play-list" class="col-lg-12">
+      </div>
+    </div>
+  </div>
+  <div id="playlistform" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="add-form-1">
+          <div class="modal-header">
+            <button type="button" class="close back" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add New Playlist</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-left">
+              <div>
+                <label>Playlist Name</label>
+                <input type="text" placeholder="Name" class='playlistName'>
+              </div>
+              <div>
+                <label>Playlist Imge</label>
+                <input type="url" placeholder="Imge url" class='add-url-imge'>
+              </div>
+              <p class="error-msg"></p>
+            </div>
+            <div>
+              <img class="show-imge">
+            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger next">Next</button>
+              <button type="button" class="btn btn-danger Reset">Reset Fileds</button>
+            </div>
+        </div>
+        <div class="add-form-2">
+          <div class="modal-header">
+            <button type="button" class="close back" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Add Playlist Songs</h4>
+          </div>
+          <div class="modal-body">
+            <div class="url-list-form">
+              <div>
+                <label>Songs URL</label>
+                <input type="url" class="add-song-url">
+                <label>Name: </label>
+                <input type="text" class="name-inp" data-i='0'>
+              </div>
+              <div>
+                <label>Songs URL</label>
+                <input type="url" class="add-song-url">
+                <label>Name: </label>
+                <input type="text" class="name-inp" data-i='1'>
+              </div>
+              <div>
+                <label>Songs URL</label>
+                <input type="url" class="add-song-url">
+                <label>Name: </label>
+                <input type="text" class="name-inp" data-i='2'>
+              </div>
+            </div>
+            <p class="">
+              <span class="add-url-form glyphicon glyphicon-plus-sign"></span> Add Another Song</p>
+            <p class="error-msg-2"></p>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger add-new-songs">FINISH &amp; SAVE</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.arctext.js"></script>
+  <script>
+  </script>
+  <script src="js/validforms.js"></script>
+  <script src="js/playlist.js"></script>
+  <script>
+    var form = new ValidForms();
+    form.buttons;
+    var playlist = new PlayList();
+    playlist.onload();
+  </script>
+</body>
+
+</html>
